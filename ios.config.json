@@ -1,0 +1,9 @@
+{
+   "AppName":"笨小孩",
+   "Version":"1.0",
+   "BuildVersion":"1.1.0",
+   "AppId":"com.baba.weex",
+   "CodeSign":"",
+   "Profile":"",
+   "WeexBundle":"homepage/homepage.js"
+}
