@@ -160,7 +160,7 @@ export default {
               url:Adapter.getBundleUrl('GoodsDetail'), 
               animated:"true",
               hidden:'false',
-              title:'商品-详情'
+              title:'商品-详情'//加载完成后，已下个界面的name:为标题
             }, event => {
               console.log('结果回调')
           })
