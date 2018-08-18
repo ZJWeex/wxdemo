@@ -22,7 +22,7 @@
           <spec-cells :selectId='item.selectGoodsId' :specs='item.goodsSpecs' @changeItem="onChangeItem"></spec-cells>
         </div>
         <div v-if="item.type === 'ruleTel'">
-          <rule-tel :dataModel='item'></rule-tel>
+          <rule-tel :dataModel='item' @ruleClick="openBottomPopup"></rule-tel>
         </div>
         <div v-if="item.type === 'singeImg'">
           <div v-for="(source, i) in item.gpImgURLs" :key="i">
@@ -33,6 +33,13 @@
     </list>
     <!-- 底部菜篮子 -->
     <BottomCart class="bottomCart"></BottomCart>
+    <Sheet popup-color="rgb(92, 184, 92)"
+               :show="isBottomShow"
+               @wxcPopupOverlayClicked="popupOverlayBottomClick"
+               pos="bottom"
+               height="500">
+        <text style="padding:40px" @click="popupOverlayBottomClick">这是弹出框</text>
+    </Sheet>
   </div>
 </template>
 
@@ -41,6 +48,7 @@ import DeitailBanner from "@/components/DeitailBanner.vue";
 import SpecCells from "@/components/SpecCells.vue";
 import RuleTel from "@/components/RuleTel.vue";
 import BottomCart from "@/components/BottomCart.vue";
+import Sheet from "@/components/Sheet.vue"
 import Define from '@/Define.js';
 import Fetch from '@/Fetch.js'
 
@@ -51,12 +59,13 @@ var globalEvent = weex.requireModule("globalEvent");
 var navigator = weex.requireModule('navigator')
 
 export default {
-  components: { DeitailBanner, SpecCells, RuleTel, BottomCart },
+  components: { DeitailBanner, SpecCells, RuleTel, BottomCart ,Sheet },
   name: "商品详情",
   data() {
     return {
       supGoodsId:  '',
-      dataList: []
+      dataList: [],
+      isBottomShow: false,
     };
   },
   beforeCreate: function () {
@@ -122,6 +131,13 @@ export default {
        //singeImg
        this.dataList.push({type: "singeImg", gpImgURLs:result.gpImgURLs, imgHeight: result.gpImgPhotos.height});
     },
+    openBottomPopup () {
+        this.isBottomShow = true;
+      },
+      //非状态组件，需要在这里关闭
+      popupOverlayBottomClick () {
+        this.isBottomShow = false;
+      },
     onImageLoad: function(index,event) {
       var that = this;
       console.log('width='+ event.size.naturalWidth +',height=' + event.size.naturalHeight)
@@ -198,17 +214,6 @@ export default {
 .deleline {
   text-decoration:line-through;
 }
-.base64{
-   display: inline-block;
-   color: #999; 
-   font-size: 24px; 
-   background-image: url(data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///5mZmf///yH5BAEAAAMALAAAAAABAAEAAAICVAEAOw==); 
-   background-repeat: repeat-x; 
-   background-position: left center; 
-   height: 32px; 
-   line-height: 32px;
-  }
-
 .spec {
   flex-direction: row;
   flex-wrap: wrap;
@@ -225,5 +230,13 @@ export default {
     position: fixed;
     left: 0px;
     right: 0px;
+  }
+  .mask {
+    width: 750px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
   }
 </style>

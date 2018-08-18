@@ -40,8 +40,8 @@ export default {
   },
   methods: {
       ruleClick: function() {
-          modal.toast({message:'服务规则'})
-         
+        //自定义事件
+         this.$emit('ruleClick', '服务规则'); 
       },
       telClick: function() {
         var that = this;
