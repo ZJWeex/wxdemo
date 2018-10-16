@@ -129,7 +129,7 @@ export default {
   methods: {
     loadData: function() {
        var that =this
-      Fetch.post('superior/wechat/layoutConfig.json',{},function(jsonString){
+      Fetch.get('superior/wechat/layoutConfig.json',function(jsonString){
         that.refreshing = false
         console.log('请求成功' + jsonString)
         that.requestdata = that.formatData(jsonString).objs

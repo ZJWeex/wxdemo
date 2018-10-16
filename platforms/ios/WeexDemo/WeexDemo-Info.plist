@@ -146,5 +146,9 @@
   <string>bundlejs/homepage/homepage.js</string>
   <key>WXSocketConnectionURL</key>
   <string>ws://192.168.15.227:8080</string>
+  <key>WXEntryBundleURL</key>
+  <string>bundlejs/homepage/homepage.js</string>
+  <key>WXSocketConnectionURL</key>
+  <string>ws://192.168.15.227:8080</string>
 </dict>
 </plist>
