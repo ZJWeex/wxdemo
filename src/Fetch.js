@@ -45,11 +45,23 @@ function getRequest(url, params, success, failure) {
    if(url.indexOf('http') == -1){
      resultURL = baseUrl + url;
    }
-
+    var HTTPHeader = {}
+    var jsonType = ''
+    if (WXEnvironment.platform.toLowerCase() === 'web'){
+      HTTPHeader = {'Content-Type':'application/json'}
+      jsonType = 'jsonp'
+    }else if(WXEnvironment.platform.toLowerCase() === 'ios'){
+      HTTPHeader = {'Content-Type':'application/json;charset=utf-8'}
+      jsonType = 'text'
+    }else if(WXEnvironment.platform.toLowerCase() === 'android'){
+      HTTPHeader = {'Content-Type':'application/json'}
+      jsonType = 'text'
+    }
     stream.fetch({
         method: 'GET',
         url: resultURL +'?' + toParams(params),
-        type:'jsonp'
+        type:jsonType,
+        headers: HTTPHeader,
       },function(ret) {
         if(!ret.ok){
           modal.toast({
@@ -60,6 +72,9 @@ function getRequest(url, params, success, failure) {
         }else{
           var result = JSON.stringify(ret.data);
           console.log('get:'+result);
+          if(WXEnvironment.platform === 'android' || WXEnvironment.platform === 'iOS'){
+            result = JSON.parse(result)
+          }
           success(result)
         }
       },function(response){
