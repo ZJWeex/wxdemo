@@ -157,7 +157,7 @@ export default {
           storage.setItem(Define.kSuperior_goods_id, e.linkDataId, event => {})
           console.log('参数='+e.linkDataId)
           navigator.push({
-              url:Adapter.getBundleUrl('GoodsDetail'), 
+              url:'GoodsDetail.html',//Adapter.getBundleUrl('GoodsDetail'), 
               animated:"true",
               hidden:'false',
               title:'商品-详情'//加载完成后，已下个界面的name:为标题

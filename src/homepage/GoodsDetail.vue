@@ -170,7 +170,14 @@ export default {
       this.loadData();
     },
     
-  }
+  },
+   beforeDestroy(){
+        console.log("我即将离开");
+    },
+    //释放时，调用该函数
+    destroyed(){
+        console.log('被释放了')
+    }
 };
 </script>
 
