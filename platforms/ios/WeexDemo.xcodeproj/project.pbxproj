@@ -23,11 +23,12 @@
 		84361D3B1CA10F8E00F43825 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 775BEE7F1C1E8ECC008D1629 /* main.m */; };
 		84361D5B1CA10F8E00F43825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775BEE8A1C1E8ECC008D1629 /* Assets.xcassets */; };
 		84D7CAC71CE3266C00D48D46 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7475ACA01CD8444A0044E96C /* libsqlite3.0.tbd */; };
+		B6BA306C21B2810700DE9E94 /* WXNavigatorModule+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA306B21B2810700DE9E94 /* WXNavigatorModule+Extension.m */; };
 		B6BB746F21A574C500B8223A /* WXPaymentModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB746E21A574C500B8223A /* WXPaymentModule.m */; };
-		B6BB747221A5755F00B8223A /* WXGlobalEventModule+FireEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB747121A5755F00B8223A /* WXGlobalEventModule+FireEvent.m */; };
 		B6BB747F21A63FE600B8223A /* WXAComponent+ALink.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB747E21A63FE600B8223A /* WXAComponent+ALink.m */; };
 		B6C7287421215D8C00EB98E3 /* WXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C7287321215D8C00EB98E3 /* WXViewController.m */; };
 		B6C7287721215EE800EB98E3 /* WXNavigationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C7287621215EE800EB98E3 /* WXNavigationImpl.m */; };
+		B6CBC47E21B15DD40071568E /* WXGlobalEventModule+PostEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CBC47D21B15DD40071568E /* WXGlobalEventModule+PostEvent.m */; };
 		B6FFAA0F211C452E00F4DF32 /* WXEventModuleDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FFAA0E211C452E00F4DF32 /* WXEventModuleDefaultImpl.m */; };
 		D3DB97659EA84DC3ADEFA660 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B116DBF2254E48A0816816AE /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D5FFB0F3F6F246E9A93F5369 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983B223F3951480F8D2048E3 /* CoreLocation.framework */; };
@@ -83,10 +84,11 @@
 		B116DBF2254E48A0816816AE /* ImageIO.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		B16099883D828D1227C710E2 /* libPods-WeexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B623929121AB9A3D00621ECB /* WXStorageModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXStorageModule.h; sourceTree = "<group>"; };
+		B6BA306921B2810600DE9E94 /* WXNavigatorModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNavigatorModule.h; sourceTree = "<group>"; };
+		B6BA306A21B2810600DE9E94 /* WXNavigatorModule+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXNavigatorModule+Extension.h"; sourceTree = "<group>"; };
+		B6BA306B21B2810700DE9E94 /* WXNavigatorModule+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXNavigatorModule+Extension.m"; sourceTree = "<group>"; };
 		B6BB746D21A574C500B8223A /* WXPaymentModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXPaymentModule.h; sourceTree = "<group>"; };
 		B6BB746E21A574C500B8223A /* WXPaymentModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXPaymentModule.m; sourceTree = "<group>"; };
-		B6BB747021A5755F00B8223A /* WXGlobalEventModule+FireEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXGlobalEventModule+FireEvent.h"; sourceTree = "<group>"; };
-		B6BB747121A5755F00B8223A /* WXGlobalEventModule+FireEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXGlobalEventModule+FireEvent.m"; sourceTree = "<group>"; };
 		B6BB747D21A63FE500B8223A /* WXAComponent+ALink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXAComponent+ALink.h"; sourceTree = "<group>"; };
 		B6BB747E21A63FE600B8223A /* WXAComponent+ALink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXAComponent+ALink.m"; sourceTree = "<group>"; };
 		B6C7287221215D8C00EB98E3 /* WXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXViewController.h; sourceTree = "<group>"; };
@@ -94,6 +96,8 @@
 		B6C7287521215EE800EB98E3 /* WXNavigationImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXNavigationImpl.h; sourceTree = "<group>"; };
 		B6C7287621215EE800EB98E3 /* WXNavigationImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXNavigationImpl.m; sourceTree = "<group>"; };
 		B6C72878212160D000EB98E3 /* WXNavigationDefaultImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXNavigationDefaultImpl.h; sourceTree = "<group>"; };
+		B6CBC47C21B15DD40071568E /* WXGlobalEventModule+PostEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXGlobalEventModule+PostEvent.h"; sourceTree = "<group>"; };
+		B6CBC47D21B15DD40071568E /* WXGlobalEventModule+PostEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXGlobalEventModule+PostEvent.m"; sourceTree = "<group>"; };
 		B6E15F4F21A583FA00F07CB1 /* WXGlobalEventModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXGlobalEventModule.h; sourceTree = "<group>"; };
 		B6FFAA0D211C452E00F4DF32 /* WXEventModuleDefaultImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXEventModuleDefaultImpl.h; sourceTree = "<group>"; };
 		B6FFAA0E211C452E00F4DF32 /* WXEventModuleDefaultImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXEventModuleDefaultImpl.m; sourceTree = "<group>"; };
@@ -152,9 +156,12 @@
 				B6BB746D21A574C500B8223A /* WXPaymentModule.h */,
 				B6BB746E21A574C500B8223A /* WXPaymentModule.m */,
 				B6E15F4F21A583FA00F07CB1 /* WXGlobalEventModule.h */,
-				B6BB747021A5755F00B8223A /* WXGlobalEventModule+FireEvent.h */,
-				B6BB747121A5755F00B8223A /* WXGlobalEventModule+FireEvent.m */,
+				B6CBC47C21B15DD40071568E /* WXGlobalEventModule+PostEvent.h */,
+				B6CBC47D21B15DD40071568E /* WXGlobalEventModule+PostEvent.m */,
 				B623929121AB9A3D00621ECB /* WXStorageModule.h */,
+				B6BA306921B2810600DE9E94 /* WXNavigatorModule.h */,
+				B6BA306A21B2810600DE9E94 /* WXNavigatorModule+Extension.h */,
+				B6BA306B21B2810700DE9E94 /* WXNavigatorModule+Extension.m */,
 			);
 			path = WeexConfig;
 			sourceTree = "<group>";
@@ -531,8 +538,8 @@
 			files = (
 				0A3122AF1E1F41E30041B972 /* WeexSDKManager.m in Sources */,
 				0A4A05FA1E0405070046E1BE /* WXDemoViewController.m in Sources */,
+				B6BA306C21B2810700DE9E94 /* WXNavigatorModule+Extension.m in Sources */,
 				B6C7287721215EE800EB98E3 /* WXNavigationImpl.m in Sources */,
-				B6BB747221A5755F00B8223A /* WXGlobalEventModule+FireEvent.m in Sources */,
 				775BEE831C1E8ECC008D1629 /* AppDelegate.m in Sources */,
 				B6C7287421215D8C00EB98E3 /* WXViewController.m in Sources */,
 				B6BB746F21A574C500B8223A /* WXPaymentModule.m in Sources */,
@@ -541,6 +548,7 @@
 				775BEE801C1E8ECC008D1629 /* main.m in Sources */,
 				B6FFAA0F211C452E00F4DF32 /* WXEventModuleDefaultImpl.m in Sources */,
 				0A7758D71EA0D39C00AE9815 /* WXImgLoaderDefaultImpl.m in Sources */,
+				B6CBC47E21B15DD40071568E /* WXGlobalEventModule+PostEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

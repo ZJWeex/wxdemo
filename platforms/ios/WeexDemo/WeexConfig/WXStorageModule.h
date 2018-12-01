@@ -51,6 +51,9 @@ self.storage = [WXStorageModule new];
         if (count >0) {
             UIViewController *vc = weakSelf.viewControllers[2];
             vc.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d",count];
+        }else{
+            UIViewController *vc = weakSelf.viewControllers[2];
+            vc.tabBarItem.badgeValue = nil;
         }
         
     }];

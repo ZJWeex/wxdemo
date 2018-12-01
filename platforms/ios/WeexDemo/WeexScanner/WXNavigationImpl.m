@@ -16,6 +16,7 @@
 
 @end
 @implementation WXNavigationImpl
+WX_EXPORT_METHOD(@selector(go:callback:))
 
 - (void)pushViewControllerWithParam:(NSDictionary *)param completion:(WXNavigationResultBlock)block withContainer:(UIViewController *)container {
     if (0 == [param count] || !param[@"url"] || !container) {
@@ -93,6 +94,31 @@
     container.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:view];
     
     [self callback:block code:MSG_SUCCESS data:nil];
+}
+
+-(void)go:(NSInteger)index callback:(WXModuleKeepAliveCallback)callback{
+    if (index>0) {
+        callback(@"fail",NO);
+        return;
+    }
+    UIViewController *controller = self.weexInstance.viewController;
+    if (controller.navigationController) {
+        NSArray *controllers = controller.navigationController.viewControllers;
+        NSUInteger page = abs((int)index);
+        if (controllers.count > page) {
+            UIViewController *targetVC = controllers[controllers.count - 1 -page];
+            [controller.navigationController popToViewController:targetVC animated:YES];
+            callback(@"success",NO);
+        }else if (controllers.count>1 && page>=controllers.count){
+            [controller.navigationController popToRootViewControllerAnimated:YES];
+            callback(@"success",NO);
+        }else{
+            callback(@"fail",NO);
+        }
+        
+    }else{
+        callback(@"fail",NO);
+    }
 }
 
 @end
