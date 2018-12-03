@@ -25,7 +25,7 @@
     url = [NSURL URLWithString:BUNDLE_URL];
 #endif
     NSString * entryURL = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"WXEntryBundleURL"];
-//    entryURL = @"http://192.168.15.227:8081/dist/homepage/homepage.js";
+    entryURL = @"http://192.168.15.227:8081/dist/homepage/homepage.js";
     if (entryURL) {
         if ([entryURL hasPrefix:@"http"]) {
             url = [NSURL URLWithString:entryURL];

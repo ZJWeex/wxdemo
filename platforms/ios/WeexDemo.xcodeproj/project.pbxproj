@@ -24,6 +24,7 @@
 		84361D5B1CA10F8E00F43825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775BEE8A1C1E8ECC008D1629 /* Assets.xcassets */; };
 		84D7CAC71CE3266C00D48D46 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7475ACA01CD8444A0044E96C /* libsqlite3.0.tbd */; };
 		B6BA306C21B2810700DE9E94 /* WXNavigatorModule+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA306B21B2810700DE9E94 /* WXNavigatorModule+Extension.m */; };
+		B6BA307421B517CC00DE9E94 /* WXPickerModule+Evnet.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA307121B517C900DE9E94 /* WXPickerModule+Evnet.m */; };
 		B6BB746F21A574C500B8223A /* WXPaymentModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB746E21A574C500B8223A /* WXPaymentModule.m */; };
 		B6BB747F21A63FE600B8223A /* WXAComponent+ALink.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB747E21A63FE600B8223A /* WXAComponent+ALink.m */; };
 		B6C7287421215D8C00EB98E3 /* WXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C7287321215D8C00EB98E3 /* WXViewController.m */; };
@@ -87,6 +88,9 @@
 		B6BA306921B2810600DE9E94 /* WXNavigatorModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNavigatorModule.h; sourceTree = "<group>"; };
 		B6BA306A21B2810600DE9E94 /* WXNavigatorModule+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXNavigatorModule+Extension.h"; sourceTree = "<group>"; };
 		B6BA306B21B2810700DE9E94 /* WXNavigatorModule+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXNavigatorModule+Extension.m"; sourceTree = "<group>"; };
+		B6BA307121B517C900DE9E94 /* WXPickerModule+Evnet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXPickerModule+Evnet.m"; sourceTree = "<group>"; };
+		B6BA307221B517CB00DE9E94 /* WXPickerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPickerModule.h; sourceTree = "<group>"; };
+		B6BA307321B517CB00DE9E94 /* WXPickerModule+Evnet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXPickerModule+Evnet.h"; sourceTree = "<group>"; };
 		B6BB746D21A574C500B8223A /* WXPaymentModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXPaymentModule.h; sourceTree = "<group>"; };
 		B6BB746E21A574C500B8223A /* WXPaymentModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXPaymentModule.m; sourceTree = "<group>"; };
 		B6BB747D21A63FE500B8223A /* WXAComponent+ALink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXAComponent+ALink.h"; sourceTree = "<group>"; };
@@ -162,6 +166,9 @@
 				B6BA306921B2810600DE9E94 /* WXNavigatorModule.h */,
 				B6BA306A21B2810600DE9E94 /* WXNavigatorModule+Extension.h */,
 				B6BA306B21B2810700DE9E94 /* WXNavigatorModule+Extension.m */,
+				B6BA307221B517CB00DE9E94 /* WXPickerModule.h */,
+				B6BA307321B517CB00DE9E94 /* WXPickerModule+Evnet.h */,
+				B6BA307121B517C900DE9E94 /* WXPickerModule+Evnet.m */,
 			);
 			path = WeexConfig;
 			sourceTree = "<group>";
@@ -539,6 +546,7 @@
 				0A3122AF1E1F41E30041B972 /* WeexSDKManager.m in Sources */,
 				0A4A05FA1E0405070046E1BE /* WXDemoViewController.m in Sources */,
 				B6BA306C21B2810700DE9E94 /* WXNavigatorModule+Extension.m in Sources */,
+				B6BA307421B517CC00DE9E94 /* WXPickerModule+Evnet.m in Sources */,
 				B6C7287721215EE800EB98E3 /* WXNavigationImpl.m in Sources */,
 				775BEE831C1E8ECC008D1629 /* AppDelegate.m in Sources */,
 				B6C7287421215D8C00EB98E3 /* WXViewController.m in Sources */,
