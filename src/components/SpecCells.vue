@@ -29,7 +29,8 @@ export default {
                 //  type: Array,
                  default:function(){
                        return [{supGoodsAliasName:'默认值', supGoodsId:'780949458800914432'},
-                               {supGoodsAliasName:'默认值1', supGoodsId:'764587003762225152'}]
+                               {supGoodsAliasName:'weex', supGoodsId:'764587003762225152'},
+]
                       } 
                 },
             selectId:''
