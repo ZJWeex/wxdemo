@@ -23,6 +23,7 @@
 		84361D3B1CA10F8E00F43825 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 775BEE7F1C1E8ECC008D1629 /* main.m */; };
 		84361D5B1CA10F8E00F43825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775BEE8A1C1E8ECC008D1629 /* Assets.xcassets */; };
 		84D7CAC71CE3266C00D48D46 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7475ACA01CD8444A0044E96C /* libsqlite3.0.tbd */; };
+		B610ED2522C4DC6C00B8D389 /* WXTextAreaComponent+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = B610ED2422C4DC6C00B8D389 /* WXTextAreaComponent+Method.m */; };
 		B6BA306C21B2810700DE9E94 /* WXNavigatorModule+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA306B21B2810700DE9E94 /* WXNavigatorModule+Extension.m */; };
 		B6BA307421B517CC00DE9E94 /* WXPickerModule+Evnet.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA307121B517C900DE9E94 /* WXPickerModule+Evnet.m */; };
 		B6BB746F21A574C500B8223A /* WXPaymentModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB746E21A574C500B8223A /* WXPaymentModule.m */; };
@@ -84,6 +85,8 @@
 		A79EA8D70DAC9F1341C9E5F7 /* Pods-WeexUITestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexUITestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeexUITestDemo/Pods-WeexUITestDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B116DBF2254E48A0816816AE /* ImageIO.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		B16099883D828D1227C710E2 /* libPods-WeexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B610ED2322C4DC6B00B8D389 /* WXTextAreaComponent+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXTextAreaComponent+Method.h"; sourceTree = "<group>"; };
+		B610ED2422C4DC6C00B8D389 /* WXTextAreaComponent+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXTextAreaComponent+Method.m"; sourceTree = "<group>"; };
 		B623929121AB9A3D00621ECB /* WXStorageModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXStorageModule.h; sourceTree = "<group>"; };
 		B6BA306921B2810600DE9E94 /* WXNavigatorModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNavigatorModule.h; sourceTree = "<group>"; };
 		B6BA306A21B2810600DE9E94 /* WXNavigatorModule+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXNavigatorModule+Extension.h"; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 				B6BA307221B517CB00DE9E94 /* WXPickerModule.h */,
 				B6BA307321B517CB00DE9E94 /* WXPickerModule+Evnet.h */,
 				B6BA307121B517C900DE9E94 /* WXPickerModule+Evnet.m */,
+				B610ED2322C4DC6B00B8D389 /* WXTextAreaComponent+Method.h */,
+				B610ED2422C4DC6C00B8D389 /* WXTextAreaComponent+Method.m */,
 			);
 			path = WeexConfig;
 			sourceTree = "<group>";
@@ -545,6 +550,7 @@
 			files = (
 				0A3122AF1E1F41E30041B972 /* WeexSDKManager.m in Sources */,
 				0A4A05FA1E0405070046E1BE /* WXDemoViewController.m in Sources */,
+				B610ED2522C4DC6C00B8D389 /* WXTextAreaComponent+Method.m in Sources */,
 				B6BA306C21B2810700DE9E94 /* WXNavigatorModule+Extension.m in Sources */,
 				B6BA307421B517CC00DE9E94 /* WXPickerModule+Evnet.m in Sources */,
 				B6C7287721215EE800EB98E3 /* WXNavigationImpl.m in Sources */,
